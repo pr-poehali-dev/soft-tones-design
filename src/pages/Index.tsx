@@ -241,17 +241,75 @@ const Index = () => {
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                       <span className="text-primary font-bold">4</span>
                     </div>
-                    Принципы разработки
+                    Научно-педагогические принципы по Н.Н. Малофееву
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pt-4 pb-6 text-base leading-relaxed">
-                  <ul className="space-y-3 ml-6 list-disc">
-                    <li>Индивидуализация и дифференциация</li>
-                    <li>Коррекционная направленность</li>
-                    <li>Практическая ориентация</li>
-                    <li>Комплексный подход</li>
-                    <li>Преемственность уровней образования</li>
-                  </ul>
+                  <p className="mb-4">Проектирование АООП базируется на ключевых принципах отечественной дефектологии:</p>
+                  <div className="space-y-4">
+                    <div className="p-4 bg-secondary/20 rounded-lg">
+                      <h4 className="font-semibold mb-2">Принцип единства диагностики и коррекции</h4>
+                      <p className="text-sm">Программа строится только после комплексного обследования ПМПК и внутреннего консилиума школы</p>
+                    </div>
+                    <div className="p-4 bg-accent/20 rounded-lg">
+                      <h4 className="font-semibold mb-2">Соотношение академического компонента и компонента жизненной компетенции</h4>
+                      <p className="text-sm">Чем сложнее первичное нарушение (варианты .3 и .4), тем больше внимания уделяется жизненным компетенциям и меньше — академическим знаниям</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border rounded-lg px-6 bg-card">
+                <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span className="text-primary font-bold">5</span>
+                    </div>
+                    Механизм реализации через ПМПК
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-4 pb-6 text-base leading-relaxed">
+                  <div className="space-y-4">
+                    <p className="font-semibold text-primary">Важно: школа не выбирает вариант АООП самостоятельно!</p>
+                    <ul className="space-y-3 ml-6 list-disc">
+                      <li><strong>ПМПК</strong> определяет статус «ребёнок с ОВЗ» и рекомендует конкретный вариант программы (например, 5.2 для детей с ТНР)</li>
+                      <li><strong>Школа</strong> на основе ФАОП разрабатывает локальный документ — АООП конкретной организации, учитывая свои ресурсы (логопеды, дефектологи, тьюторы)</li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-primary/10 rounded-lg border border-primary/20">
+                      <p className="text-sm"><strong>С 1 сентября 2023 года</strong> все образовательные организации перешли на работу по Федеральным адаптированным образовательным программам (ФАОП), что унифицировало требования к обучению детей с ОВЗ</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border rounded-lg px-6 bg-card">
+                <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span className="text-primary font-bold">6</span>
+                    </div>
+                    Система оценки достижений
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-4 pb-6 text-base leading-relaxed">
+                  <p className="mb-4 italic">Система оценки — это не констатация неуспеха, а инструмент фиксации индивидуальных достижений ребёнка (зона ближайшего развития по Л.С. Выготскому)</p>
+                  <div className="space-y-3">
+                    <div className="p-3 bg-secondary/20 rounded-lg">
+                      <h4 className="font-semibold mb-2">Качественные показатели:</h4>
+                      <div className="flex gap-2 flex-wrap">
+                        <Badge variant="outline">выполняет совместно</Badge>
+                        <Badge variant="outline">по образцу</Badge>
+                        <Badge variant="outline">самостоятельно</Badge>
+                      </div>
+                    </div>
+                    <div className="p-3 bg-accent/20 rounded-lg">
+                      <h4 className="font-semibold mb-2">Итоговая аттестация:</h4>
+                      <ul className="text-sm space-y-2 mt-2">
+                        <li>• <strong>Варианты .1 и .2:</strong> ГИА (ОГЭ/ЕГЭ) в специальных условиях</li>
+                        <li>• <strong>Варианты .3 и .4:</strong> Экзамен по трудовому обучению, свидетельство об обучении</li>
+                      </ul>
+                    </div>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -311,14 +369,25 @@ const Index = () => {
                       2
                     </div>
                     <div>
-                      <CardTitle className="mb-2">Проектирование целевого раздела</CardTitle>
+                      <CardTitle className="mb-2">Целевой раздел: Вектор развития</CardTitle>
                       <CardDescription className="text-base">
-                        <ul className="space-y-2 mt-3">
-                          <li>✓ Формулировка пояснительной записки</li>
-                          <li>✓ Определение планируемых результатов</li>
-                          <li>✓ Разработка системы оценки достижений</li>
-                          <li>✓ Учёт особых образовательных потребностей</li>
-                        </ul>
+                        <div className="space-y-3 mt-3">
+                          <p className="font-semibold text-secondary-foreground">Ожидаемые результаты по И.М. Бгажноковой и Н.В. Бабкиной:</p>
+                          <div className="grid grid-cols-1 gap-2">
+                            <div className="flex items-start gap-2">
+                              <Badge variant="secondary" className="mt-1">Личностные</Badge>
+                              <span className="text-sm">развитие идентичности, социальных навыков, мотивации</span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <Badge variant="secondary" className="mt-1">Метапредметные</Badge>
+                              <span className="text-sm">формирование УУД (для цензовых уровней)</span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <Badge variant="secondary" className="mt-1">Предметные</Badge>
+                              <span className="text-sm">конкретные знания по дисциплинам</span>
+                            </div>
+                          </div>
+                        </div>
                       </CardDescription>
                     </div>
                   </div>
@@ -332,14 +401,17 @@ const Index = () => {
                       3
                     </div>
                     <div>
-                      <CardTitle className="mb-2">Разработка содержательного раздела</CardTitle>
+                      <CardTitle className="mb-2">Содержательный раздел: Сердце программы</CardTitle>
                       <CardDescription className="text-base">
-                        <ul className="space-y-2 mt-3">
-                          <li>✓ Адаптация учебных программ</li>
-                          <li>✓ Программа коррекционной работы</li>
-                          <li>✓ Программа формирования УУД</li>
-                          <li>✓ Программа воспитания и социализации</li>
-                        </ul>
+                        <div className="space-y-3 mt-3">
+                          <p className="font-semibold text-accent-foreground">Программа коррекционной работы (ПКР) — ключевой элемент:</p>
+                          <ul className="space-y-2">
+                            <li>• Выявление особых образовательных потребностей</li>
+                            <li>• Коррекция нарушений (речевых, сенсорных, интеллектуальных)</li>
+                            <li>• Психологическая поддержка</li>
+                            <li>• Логопедические занятия (методики Т.Б. Филичевой, Г.В. Чиркиной)</li>
+                          </ul>
+                        </div>
                       </CardDescription>
                     </div>
                   </div>
@@ -353,14 +425,19 @@ const Index = () => {
                       4
                     </div>
                     <div>
-                      <CardTitle className="mb-2">Проектирование организационного раздела</CardTitle>
+                      <CardTitle className="mb-2">Организационный раздел: Ресурсное обеспечение</CardTitle>
                       <CardDescription className="text-base">
-                        <ul className="space-y-2 mt-3">
-                          <li>✓ Составление учебного плана</li>
-                          <li>✓ Календарный учебный график</li>
-                          <li>✓ План внеурочной деятельности</li>
-                          <li>✓ Система условий реализации</li>
-                        </ul>
+                        <div className="space-y-3 mt-3">
+                          <p className="font-semibold text-primary">Учебный план — самый важный элемент:</p>
+                          <ul className="space-y-2">
+                            <li>• Сетка часов: обязательная часть + часть участников</li>
+                            <li>• Внеурочная деятельность с коррекционной направленностью</li>
+                            <li>• Специальные условия: тьюторы, оборудование, доступная среда</li>
+                          </ul>
+                          <div className="mt-3 p-2 bg-primary/10 rounded text-sm">
+                            <strong>Дифференциация:</strong> В варианте 5.2 (ТНР) больше часов на «Произношение», в 8.3 (РАС) — на социальное взаимодействие
+                          </div>
+                        </div>
                       </CardDescription>
                     </div>
                   </div>
